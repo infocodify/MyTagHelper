@@ -7,6 +7,7 @@ Create your Taghelper in asp.Net Core 2
 
 2.  Right Click on the the Project and Create a Class
 
+<code>
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using System;
 using System.Collections.Generic;
@@ -29,3 +30,4 @@ namespace TagHelpers
 
     }
 }
+</code>
