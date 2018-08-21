@@ -42,8 +42,8 @@ namespace TagHelpers
 @addTagHelper *, TagHelpers
 ```
 
-4. Open Index.cshtml and test your TagHelper
-```csharp
+4. Open Index.cshtml, add the following code run the application and test your TagHelper
+```html
 @page
 @model IndexModel
 
