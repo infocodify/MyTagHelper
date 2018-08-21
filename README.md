@@ -16,10 +16,12 @@ using System.Threading.Tasks;
 
 namespace TagHelpers
 {
+    //MyTag will be the your own Tag Helper
     public class MyTagHelpers : TagHelper
     {
         public int Count { get; set; }
-
+        
+        //Right Click on the TagHelper and Peek Definition, copy the abstract class and override 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {
             for (int i = 0; i < Count; i++)
