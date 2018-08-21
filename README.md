@@ -33,3 +33,27 @@ namespace TagHelpers
     }
 }
 ```
+3.  In the ViewImports.cshtml add your own Taghelper assembly (your web app name)
+```csharp
+@using TagHelpers
+@namespace TagHelpers.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@addTagHelper *, TagHelpers
+```
+
+4. Open Index.cshtml and test your TagHelper
+```csharp
+@page
+@model IndexModel
+
+@{
+    ViewData["Title"] = "My Own Taghelpers";
+}
+
+<h1>How to use your own Tag-Helpers</h1>
+
+<my-tag-helpers count="6">
+    <p>Text Repeated 6 - Times</p>
+</my-tag-helpers>
+```
