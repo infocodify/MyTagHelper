@@ -5,7 +5,7 @@ Create your Taghelper in asp.Net Core 2
 
 1.  Create an asp.Net Core 2 Web Application Project
 
-2.  Right Click on the the Project and Create a Class
+2.  Right Click on the Project and Create a Class
 
 ```csharp
 using Microsoft.AspNetCore.Razor.TagHelpers;
